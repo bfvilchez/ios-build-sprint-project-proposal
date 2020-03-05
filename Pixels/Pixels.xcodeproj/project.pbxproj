@@ -12,6 +12,17 @@
 		DD0C80DD240D547F00DFC008 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0C80DB240D547F00DFC008 /* Main.storyboard */; };
 		DD0C80DF240D548100DFC008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD0C80DE240D548100DFC008 /* Assets.xcassets */; };
 		DD0C80E2240D548100DFC008 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0C80E0240D548100DFC008 /* LaunchScreen.storyboard */; };
+		DD0C80F2240EF19400DFC008 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C80F1240EF19400DFC008 /* LoginScreenViewController.swift */; };
+		DD0C80F4240EF19E00DFC008 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C80F3240EF19E00DFC008 /* SignupViewController.swift */; };
+		DD0C80F6240EF1AF00DFC008 /* MemoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C80F5240EF1AF00DFC008 /* MemoriesViewController.swift */; };
+		DD0C80F8240EF1BC00DFC008 /* AddMemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C80F7240EF1BC00DFC008 /* AddMemoryViewController.swift */; };
+		DD0C80FB240F476600DFC008 /* Pixels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD0C80F9240F476600DFC008 /* Pixels.xcdatamodeld */; };
+		DD0C80FD240F47CF00DFC008 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C80FC240F47CF00DFC008 /* CoreDataStack.swift */; };
+		DD0C80FF240F47DD00DFC008 /* Picture+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C80FE240F47DD00DFC008 /* Picture+Extension.swift */; };
+		DD0C8102240F494800DFC008 /* PixelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C8101240F494800DFC008 /* PixelController.swift */; };
+		DD0C8105240F694700DFC008 /* PictureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C8104240F694700DFC008 /* PictureCollectionViewCell.swift */; };
+		DD0C810724106F5700DFC008 /* NSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C810624106F5700DFC008 /* NSManagedObjectContext.swift */; };
+		DD0C810924107A3C00DFC008 /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C810824107A3C00DFC008 /* CustomButtons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +33,17 @@
 		DD0C80DE240D548100DFC008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD0C80E1240D548100DFC008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD0C80E3240D548100DFC008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD0C80F1240EF19400DFC008 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+		DD0C80F3240EF19E00DFC008 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		DD0C80F5240EF1AF00DFC008 /* MemoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoriesViewController.swift; sourceTree = "<group>"; };
+		DD0C80F7240EF1BC00DFC008 /* AddMemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemoryViewController.swift; sourceTree = "<group>"; };
+		DD0C80FA240F476600DFC008 /* Pixels.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pixels.xcdatamodel; sourceTree = "<group>"; };
+		DD0C80FC240F47CF00DFC008 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		DD0C80FE240F47DD00DFC008 /* Picture+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Picture+Extension.swift"; sourceTree = "<group>"; };
+		DD0C8101240F494800DFC008 /* PixelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelController.swift; sourceTree = "<group>"; };
+		DD0C8104240F694700DFC008 /* PictureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCollectionViewCell.swift; sourceTree = "<group>"; };
+		DD0C810624106F5700DFC008 /* NSManagedObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObjectContext.swift; sourceTree = "<group>"; };
+		DD0C810824107A3C00DFC008 /* CustomButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,10 @@
 		DD0C80D4240D547F00DFC008 /* Pixels */ = {
 			isa = PBXGroup;
 			children = (
+				DD0C8103240F692700DFC008 /* CollectionViewCells */,
+				DD0C8100240F493400DFC008 /* Model Controller */,
+				DD0C80F0240EB65500DFC008 /* Model */,
+				DD0C80EF240EB63E00DFC008 /* View Controllers */,
 				DD0C80E9240D54AF00DFC008 /* Resources */,
 				DD0C80EA240D54C000DFC008 /* Storyboards */,
 				DD0C80DE240D548100DFC008 /* Assets.xcassets */,
@@ -65,8 +91,10 @@
 		DD0C80E9240D54AF00DFC008 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DD0C810824107A3C00DFC008 /* CustomButtons.swift */,
 				DD0C80D5240D547F00DFC008 /* AppDelegate.swift */,
 				DD0C80D7240D547F00DFC008 /* SceneDelegate.swift */,
+				DD0C810624106F5700DFC008 /* NSManagedObjectContext.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -78,6 +106,43 @@
 				DD0C80E0240D548100DFC008 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DD0C80EF240EB63E00DFC008 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD0C80F1240EF19400DFC008 /* LoginScreenViewController.swift */,
+				DD0C80F3240EF19E00DFC008 /* SignupViewController.swift */,
+				DD0C80F5240EF1AF00DFC008 /* MemoriesViewController.swift */,
+				DD0C80F7240EF1BC00DFC008 /* AddMemoryViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DD0C80F0240EB65500DFC008 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD0C80F9240F476600DFC008 /* Pixels.xcdatamodeld */,
+				DD0C80FC240F47CF00DFC008 /* CoreDataStack.swift */,
+				DD0C80FE240F47DD00DFC008 /* Picture+Extension.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DD0C8100240F493400DFC008 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD0C8101240F494800DFC008 /* PixelController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		DD0C8103240F692700DFC008 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				DD0C8104240F694700DFC008 /* PictureCollectionViewCell.swift */,
+			);
+			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +217,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD0C80D6240D547F00DFC008 /* AppDelegate.swift in Sources */,
+				DD0C810724106F5700DFC008 /* NSManagedObjectContext.swift in Sources */,
+				DD0C8105240F694700DFC008 /* PictureCollectionViewCell.swift in Sources */,
+				DD0C80F6240EF1AF00DFC008 /* MemoriesViewController.swift in Sources */,
+				DD0C80FF240F47DD00DFC008 /* Picture+Extension.swift in Sources */,
 				DD0C80D8240D547F00DFC008 /* SceneDelegate.swift in Sources */,
+				DD0C80F8240EF1BC00DFC008 /* AddMemoryViewController.swift in Sources */,
+				DD0C80F4240EF19E00DFC008 /* SignupViewController.swift in Sources */,
+				DD0C80FB240F476600DFC008 /* Pixels.xcdatamodeld in Sources */,
+				DD0C80F2240EF19400DFC008 /* LoginScreenViewController.swift in Sources */,
+				DD0C810924107A3C00DFC008 /* CustomButtons.swift in Sources */,
+				DD0C8102240F494800DFC008 /* PixelController.swift in Sources */,
+				DD0C80FD240F47CF00DFC008 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +426,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DD0C80F9240F476600DFC008 /* Pixels.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD0C80FA240F476600DFC008 /* Pixels.xcdatamodel */,
+			);
+			currentVersion = DD0C80FA240F476600DFC008 /* Pixels.xcdatamodel */;
+			path = Pixels.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DD0C80CA240D547F00DFC008 /* Project object */;
 }
