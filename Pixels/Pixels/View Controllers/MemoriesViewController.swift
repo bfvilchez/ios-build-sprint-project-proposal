@@ -14,6 +14,7 @@ class MemoriesViewController: UIViewController, NSFetchedResultsControllerDelega
     //MARK: - Properties
     @IBOutlet weak var collectionView: UICollectionView!
     private var pixelController = PixelController()
+    var user:User?
     
     var fetchResultsController: NSFetchedResultsController<Picture> {
         

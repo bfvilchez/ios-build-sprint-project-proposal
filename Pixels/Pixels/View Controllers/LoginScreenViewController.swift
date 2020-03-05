@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginScreenViewController: UIViewController {
     
@@ -37,11 +38,28 @@ class LoginScreenViewController: UIViewController {
         guard let email = emailTextfield.text, !email.isEmpty,
             let password = passwordTextfield.text, !password.isEmpty else { return }
         
-        // setting up segue.
-        guard let memoriesVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MemoriesVC") as? MemoriesViewController else { return }
-        memoriesVC.modalPresentationStyle = .fullScreen
-        self.present(memoriesVC, animated: true, completion: nil)
+        Auth.auth().signIn(withEmail: email, password: password) { ( result, error) in
+            if let error = error {
+                self.showAlert()
+                NSLog("error logging in: \(error)")
+            } else {
+                DispatchQueue.main.async {
+                    guard let memoriesVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MemoriesVC") as? MemoriesViewController else { return }
+                    memoriesVC.modalPresentationStyle = .fullScreen
+                    //  memoriesVC.user = user
+                    self.present(memoriesVC, animated: true, completion: nil)
+                }
+            }
+        }
     }
+    
+    private func showAlert() {
+        let alertVC = UIAlertController(title: "oops", message: "something is wrong! failed to log in", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertVC.addAction(ok)
+        present(alertVC, animated: true, completion: nil)
+    }
+    
     
     private func signupSegue() {
         
@@ -52,6 +70,14 @@ class LoginScreenViewController: UIViewController {
     
     @IBAction func unwindToLoginVC(_ unwindSegue: UIStoryboardSegue) {
         pixelController.signout()
+        passwordTextfield.text = ""
+        emailTextfield.text = ""
+        do {
+            try Auth.auth().signOut()
+        } catch {
+            NSLog("failed to logout user: \(error)")
+        }
+        
     }
     
 }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,7 @@
 		DD0C810724106F5700DFC008 /* NSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C810624106F5700DFC008 /* NSManagedObjectContext.swift */; };
 		DD0C810924107A3C00DFC008 /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C810824107A3C00DFC008 /* CustomButtons.swift */; };
 		DD0C810B2410B0C900DFC008 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD0C810A2410B0C900DFC008 /* GoogleService-Info.plist */; };
+		DDB663712410C3EA00D9EDFE /* User+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB663702410C3EA00D9EDFE /* User+Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		DD0C810624106F5700DFC008 /* NSManagedObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObjectContext.swift; sourceTree = "<group>"; };
 		DD0C810824107A3C00DFC008 /* CustomButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
 		DD0C810A2410B0C900DFC008 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DDB663702410C3EA00D9EDFE /* User+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Convenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,6 @@
 				B39907D904E19132F252CFC8 /* Pods-Pixels.debug.xcconfig */,
 				6B5283AAA757C877E843C5AE /* Pods-Pixels.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,6 +153,7 @@
 			children = (
 				DD0C80F9240F476600DFC008 /* Pixels.xcdatamodeld */,
 				DD0C80FC240F47CF00DFC008 /* CoreDataStack.swift */,
+				DDB663702410C3EA00D9EDFE /* User+Convenience.swift */,
 				DD0C80FE240F47DD00DFC008 /* Picture+Extension.swift */,
 			);
 			path = Model;
@@ -295,6 +297,7 @@
 				DD0C80F6240EF1AF00DFC008 /* MemoriesViewController.swift in Sources */,
 				DD0C80FF240F47DD00DFC008 /* Picture+Extension.swift in Sources */,
 				DD0C80D8240D547F00DFC008 /* SceneDelegate.swift in Sources */,
+				DDB663712410C3EA00D9EDFE /* User+Convenience.swift in Sources */,
 				DD0C80F8240EF1BC00DFC008 /* AddMemoryViewController.swift in Sources */,
 				DD0C80F4240EF19E00DFC008 /* SignupViewController.swift in Sources */,
 				DD0C80FB240F476600DFC008 /* Pixels.xcdatamodeld in Sources */,

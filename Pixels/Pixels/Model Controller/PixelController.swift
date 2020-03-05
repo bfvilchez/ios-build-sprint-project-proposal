@@ -9,10 +9,13 @@
 import Foundation
 import CoreData
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class PixelController {
     
     private(set) var pictures = [Picture]()
+    private let baseURL = URL(string: "https://santa-i-wish.firebaseio.com/")
     
     func createImage(WithName name: String, image: UIImage, pictureDescription:String, context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
         guard let image = image.jpegData(compressionQuality: 60) else { return }
@@ -33,5 +36,13 @@ class PixelController {
             NSLog("failed to delete objects")
         }
     }
+    
+    private func savePictureToServer(_ picture: Picture,completion: @escaping(NSError?) -> Void = {_ in } ) {
+        guard let user = Auth.auth().currentUser, let name = user.displayName else { return }
+        guard let pixelsURL = baseURL?.appendingPathComponent(name) else { return }
+        let request = URLRequest(url: pixelsURL)
+        
+    }
+    
     
 }

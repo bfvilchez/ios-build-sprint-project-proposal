@@ -4,8 +4,15 @@
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="picture" optional="YES" attributeType="Binary"/>
         <attribute name="pictureDescription" optional="YES" attributeType="String"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="pictures" inverseEntity="User"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="pictures" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Picture" inverseName="user" inverseEntity="Picture"/>
     </entity>
     <elements>
-        <element name="Picture" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Picture" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="User" positionX="-63" positionY="9" width="128" height="88"/>
     </elements>
 </model>

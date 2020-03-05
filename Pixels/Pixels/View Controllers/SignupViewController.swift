@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import FirebaseAuth
 class SignupViewController: UIViewController {
 
     
@@ -34,6 +34,24 @@ class SignupViewController: UIViewController {
         guard let email = emailTextField.text, !email.isEmpty,
         let password = passwordTextField.text, !password.isEmpty,
         let name = nameTextField.text, !name.isEmpty else {return }
+        
+        Auth.auth().createUser(withEmail: email, password: password) { (_, error) in
+            if let error = error {
+                NSLog("failed to register user: \(error)")
+                self.showAlert()
+            } else {
+                guard let memoriesVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MemoriesVC") as? MemoriesViewController else { return }
+                        memoriesVC.modalPresentationStyle = .fullScreen
+                        self.present(memoriesVC, animated: true, completion: nil)
+                                  
+            }
+        }
+    }
+    private func showAlert() {
+        let alertVC = UIAlertController(title: "oops", message: "Oh no failed to create account", preferredStyle: .alert)
+        let `return` = UIAlertAction(title: "return", style: .default, handler: nil)
+        alertVC.addAction(`return`)
+        present(alertVC, animated: true, completion: nil)
     }
     
 }
