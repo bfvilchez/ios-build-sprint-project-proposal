@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>745063961406-vnqi2p1lcm47vqak39h6rtb0rjqfv5me.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.745063961406-vnqi2p1lcm47vqak39h6rtb0rjqfv5me</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBLmTh2JQTJo4sOOA8JQHRkjMsQF2MUFYE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>745063961406</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>brianvilchez.Pixels</string>
+	<key>PROJECT_ID</key>
+	<string>santa-i-wish</string>
+	<key>STORAGE_BUCKET</key>
+	<string>santa-i-wish.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:745063961406:ios:76c43a884b90086516126f</string>
+	<key>DATABASE_URL</key>
+	<string>https://santa-i-wish.firebaseio.com</string>
+</dict>
+</plist>

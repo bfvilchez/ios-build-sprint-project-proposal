@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40014FE2BC9CC9246CF82CE6 /* Pods_Pixels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CEDFDAFACB8D05D833BE50 /* Pods_Pixels.framework */; };
 		DD0C80D6240D547F00DFC008 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C80D5240D547F00DFC008 /* AppDelegate.swift */; };
 		DD0C80D8240D547F00DFC008 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C80D7240D547F00DFC008 /* SceneDelegate.swift */; };
 		DD0C80DD240D547F00DFC008 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0C80DB240D547F00DFC008 /* Main.storyboard */; };
@@ -23,9 +24,13 @@
 		DD0C8105240F694700DFC008 /* PictureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C8104240F694700DFC008 /* PictureCollectionViewCell.swift */; };
 		DD0C810724106F5700DFC008 /* NSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C810624106F5700DFC008 /* NSManagedObjectContext.swift */; };
 		DD0C810924107A3C00DFC008 /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C810824107A3C00DFC008 /* CustomButtons.swift */; };
+		DD0C810B2410B0C900DFC008 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD0C810A2410B0C900DFC008 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35CEDFDAFACB8D05D833BE50 /* Pods_Pixels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pixels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B5283AAA757C877E843C5AE /* Pods-Pixels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixels.release.xcconfig"; path = "Target Support Files/Pods-Pixels/Pods-Pixels.release.xcconfig"; sourceTree = "<group>"; };
+		B39907D904E19132F252CFC8 /* Pods-Pixels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixels.debug.xcconfig"; path = "Target Support Files/Pods-Pixels/Pods-Pixels.debug.xcconfig"; sourceTree = "<group>"; };
 		DD0C80D2240D547F00DFC008 /* Pixels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pixels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD0C80D5240D547F00DFC008 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD0C80D7240D547F00DFC008 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +49,7 @@
 		DD0C8104240F694700DFC008 /* PictureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCollectionViewCell.swift; sourceTree = "<group>"; };
 		DD0C810624106F5700DFC008 /* NSManagedObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObjectContext.swift; sourceTree = "<group>"; };
 		DD0C810824107A3C00DFC008 /* CustomButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
+		DD0C810A2410B0C900DFC008 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +57,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40014FE2BC9CC9246CF82CE6 /* Pods_Pixels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1087A69A9F679ECC00A1EF8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35CEDFDAFACB8D05D833BE50 /* Pods_Pixels.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42AF3B42F151635F881D1ABB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B39907D904E19132F252CFC8 /* Pods-Pixels.debug.xcconfig */,
+				6B5283AAA757C877E843C5AE /* Pods-Pixels.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DD0C80C9240D547F00DFC008 = {
 			isa = PBXGroup;
 			children = (
 				DD0C80D4240D547F00DFC008 /* Pixels */,
 				DD0C80D3240D547F00DFC008 /* Products */,
+				42AF3B42F151635F881D1ABB /* Pods */,
+				1087A69A9F679ECC00A1EF8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +110,7 @@
 				DD0C80E9240D54AF00DFC008 /* Resources */,
 				DD0C80EA240D54C000DFC008 /* Storyboards */,
 				DD0C80DE240D548100DFC008 /* Assets.xcassets */,
+				DD0C810A2410B0C900DFC008 /* GoogleService-Info.plist */,
 				DD0C80E3240D548100DFC008 /* Info.plist */,
 			);
 			path = Pixels;
@@ -152,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD0C80E6240D548100DFC008 /* Build configuration list for PBXNativeTarget "Pixels" */;
 			buildPhases = (
+				116F5D039DF5364C776EAC73 /* [CP] Check Pods Manifest.lock */,
 				DD0C80CE240D547F00DFC008 /* Sources */,
 				DD0C80CF240D547F00DFC008 /* Frameworks */,
 				DD0C80D0240D547F00DFC008 /* Resources */,
+				C4FE35A2E71D96F45CCDC66C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,12 +234,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD0C80E2240D548100DFC008 /* LaunchScreen.storyboard in Resources */,
+				DD0C810B2410B0C900DFC008 /* GoogleService-Info.plist in Resources */,
 				DD0C80DF240D548100DFC008 /* Assets.xcassets in Resources */,
 				DD0C80DD240D547F00DFC008 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		116F5D039DF5364C776EAC73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pixels-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4FE35A2E71D96F45CCDC66C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pixels/Pods-Pixels-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pixels/Pods-Pixels-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pixels/Pods-Pixels-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD0C80CE240D547F00DFC008 /* Sources */ = {
@@ -370,6 +443,7 @@
 		};
 		DD0C80E7240D548100DFC008 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B39907D904E19132F252CFC8 /* Pods-Pixels.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -388,6 +462,7 @@
 		};
 		DD0C80E8240D548100DFC008 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B5283AAA757C877E843C5AE /* Pods-Pixels.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
