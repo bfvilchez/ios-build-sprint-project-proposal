@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+struct PictureRepresentation: Codable {
+    let imageData: Data
+    let name: String
+    let photoDescription: String
+    
+    
+}

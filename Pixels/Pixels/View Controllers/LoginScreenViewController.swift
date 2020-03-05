@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import Firebase
 
 class LoginScreenViewController: UIViewController {
     
@@ -46,7 +47,6 @@ class LoginScreenViewController: UIViewController {
                 DispatchQueue.main.async {
                     guard let memoriesVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MemoriesVC") as? MemoriesViewController else { return }
                     memoriesVC.modalPresentationStyle = .fullScreen
-                    //  memoriesVC.user = user
                     self.present(memoriesVC, animated: true, completion: nil)
                 }
             }

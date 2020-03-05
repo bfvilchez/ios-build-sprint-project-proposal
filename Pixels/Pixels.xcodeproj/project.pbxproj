@@ -11,7 +11,6 @@
 		DD0C80D6240D547F00DFC008 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C80D5240D547F00DFC008 /* AppDelegate.swift */; };
 		DD0C80D8240D547F00DFC008 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C80D7240D547F00DFC008 /* SceneDelegate.swift */; };
 		DD0C80DD240D547F00DFC008 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0C80DB240D547F00DFC008 /* Main.storyboard */; };
-		DD0C80DF240D548100DFC008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD0C80DE240D548100DFC008 /* Assets.xcassets */; };
 		DD0C80E2240D548100DFC008 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0C80E0240D548100DFC008 /* LaunchScreen.storyboard */; };
 		DD0C80F2240EF19400DFC008 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C80F1240EF19400DFC008 /* LoginScreenViewController.swift */; };
 		DD0C80F4240EF19E00DFC008 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C80F3240EF19E00DFC008 /* SignupViewController.swift */; };
@@ -26,6 +25,9 @@
 		DD0C810924107A3C00DFC008 /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C810824107A3C00DFC008 /* CustomButtons.swift */; };
 		DD0C810B2410B0C900DFC008 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD0C810A2410B0C900DFC008 /* GoogleService-Info.plist */; };
 		DDB663712410C3EA00D9EDFE /* User+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB663702410C3EA00D9EDFE /* User+Convenience.swift */; };
+		DDB663732410CAD600D9EDFE /* PictureRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB663722410CAD600D9EDFE /* PictureRepresentation.swift */; };
+		DDB6637524115E7900D9EDFE /* http+secured.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6637424115E7900D9EDFE /* http+secured.swift */; };
+		DDB663772411804C00D9EDFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDB663762411804C00D9EDFE /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +38,6 @@
 		DD0C80D5240D547F00DFC008 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD0C80D7240D547F00DFC008 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DD0C80DC240D547F00DFC008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DD0C80DE240D548100DFC008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD0C80E1240D548100DFC008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD0C80E3240D548100DFC008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD0C80F1240EF19400DFC008 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +53,9 @@
 		DD0C810824107A3C00DFC008 /* CustomButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
 		DD0C810A2410B0C900DFC008 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DDB663702410C3EA00D9EDFE /* User+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Convenience.swift"; sourceTree = "<group>"; };
+		DDB663722410CAD600D9EDFE /* PictureRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureRepresentation.swift; sourceTree = "<group>"; };
+		DDB6637424115E7900D9EDFE /* http+secured.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "http+secured.swift"; sourceTree = "<group>"; };
+		DDB663762411804C00D9EDFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Pixels/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +114,6 @@
 				DD0C80EF240EB63E00DFC008 /* View Controllers */,
 				DD0C80E9240D54AF00DFC008 /* Resources */,
 				DD0C80EA240D54C000DFC008 /* Storyboards */,
-				DD0C80DE240D548100DFC008 /* Assets.xcassets */,
 				DD0C810A2410B0C900DFC008 /* GoogleService-Info.plist */,
 				DD0C80E3240D548100DFC008 /* Info.plist */,
 			);
@@ -121,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				DD0C810824107A3C00DFC008 /* CustomButtons.swift */,
+				DDB6637424115E7900D9EDFE /* http+secured.swift */,
 				DD0C80D5240D547F00DFC008 /* AppDelegate.swift */,
 				DD0C80D7240D547F00DFC008 /* SceneDelegate.swift */,
 				DD0C810624106F5700DFC008 /* NSManagedObjectContext.swift */,
@@ -133,6 +137,7 @@
 			children = (
 				DD0C80DB240D547F00DFC008 /* Main.storyboard */,
 				DD0C80E0240D548100DFC008 /* LaunchScreen.storyboard */,
+				DDB663762411804C00D9EDFE /* Assets.xcassets */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 			children = (
 				DD0C80F9240F476600DFC008 /* Pixels.xcdatamodeld */,
 				DD0C80FC240F47CF00DFC008 /* CoreDataStack.swift */,
+				DDB663722410CAD600D9EDFE /* PictureRepresentation.swift */,
 				DDB663702410C3EA00D9EDFE /* User+Convenience.swift */,
 				DD0C80FE240F47DD00DFC008 /* Picture+Extension.swift */,
 			);
@@ -237,7 +243,7 @@
 			files = (
 				DD0C80E2240D548100DFC008 /* LaunchScreen.storyboard in Resources */,
 				DD0C810B2410B0C900DFC008 /* GoogleService-Info.plist in Resources */,
-				DD0C80DF240D548100DFC008 /* Assets.xcassets in Resources */,
+				DDB663772411804C00D9EDFE /* Assets.xcassets in Resources */,
 				DD0C80DD240D547F00DFC008 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,11 +300,13 @@
 				DD0C80D6240D547F00DFC008 /* AppDelegate.swift in Sources */,
 				DD0C810724106F5700DFC008 /* NSManagedObjectContext.swift in Sources */,
 				DD0C8105240F694700DFC008 /* PictureCollectionViewCell.swift in Sources */,
+				DDB6637524115E7900D9EDFE /* http+secured.swift in Sources */,
 				DD0C80F6240EF1AF00DFC008 /* MemoriesViewController.swift in Sources */,
 				DD0C80FF240F47DD00DFC008 /* Picture+Extension.swift in Sources */,
 				DD0C80D8240D547F00DFC008 /* SceneDelegate.swift in Sources */,
 				DDB663712410C3EA00D9EDFE /* User+Convenience.swift in Sources */,
 				DD0C80F8240EF1BC00DFC008 /* AddMemoryViewController.swift in Sources */,
+				DDB663732410CAD600D9EDFE /* PictureRepresentation.swift in Sources */,
 				DD0C80F4240EF19E00DFC008 /* SignupViewController.swift in Sources */,
 				DD0C80FB240F476600DFC008 /* Pixels.xcdatamodeld in Sources */,
 				DD0C80F2240EF19400DFC008 /* LoginScreenViewController.swift in Sources */,

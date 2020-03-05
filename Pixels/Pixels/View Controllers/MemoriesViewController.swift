@@ -40,11 +40,22 @@ class MemoriesViewController: UIViewController, NSFetchedResultsControllerDelega
         super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
+        pixelController.fetchImagesFromServer { (error) in
+            if let error = error as NSError? {
+                print("failed to fetch data from server: \(error)")
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         collectionView.reloadData()
+         print(fetchResultsController.fetchedObjects?.count)
     }
     
     //MARK: - actions

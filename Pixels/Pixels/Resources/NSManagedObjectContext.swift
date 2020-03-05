@@ -17,6 +17,7 @@ extension NSManagedObjectContext {
                 try save()
             } catch {
                 NSLog("failed to save changes: \(error)")
+                 reset()
             }
         }
     }

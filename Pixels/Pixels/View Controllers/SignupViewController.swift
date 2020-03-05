@@ -34,14 +34,20 @@ class SignupViewController: UIViewController {
         guard let email = emailTextField.text, !email.isEmpty,
         let password = passwordTextField.text, !password.isEmpty,
         let name = nameTextField.text, !name.isEmpty else {return }
-        
-        Auth.auth().createUser(withEmail: email, password: password) { (_, error) in
+        Auth.auth().createUser(withEmail: email, password: password) { ( result, error) in
             if let error = error {
                 NSLog("failed to register user: \(error)")
                 self.showAlert()
             } else {
                 guard let memoriesVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MemoriesVC") as? MemoriesViewController else { return }
                         memoriesVC.modalPresentationStyle = .fullScreen
+                let nameChange = Auth.auth().currentUser?.createProfileChangeRequest()
+                nameChange?.displayName = name
+                nameChange?.commitChanges(completion: { (error) in
+                    if let error = error as NSError? {
+                        NSLog("failed to update user's name: \(error)")
+                    }
+                })
                         self.present(memoriesVC, animated: true, completion: nil)
                                   
             }
