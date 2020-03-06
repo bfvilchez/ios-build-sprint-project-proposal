@@ -165,15 +165,15 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="719" id="ymD-az-qzd"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yqs-DG-UC8">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yqs-DG-UC8">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="20" minY="1" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PictureCell" id="jk7-hr-NeK" customClass="PictureCollectionViewCell" customModule="Pixels" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="1" width="358" height="354"/>
+                                        <rect key="frame" x="28" y="1" width="358" height="354"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3MB-3m-h8S">
                                             <rect key="frame" x="0.0" y="0.0" width="358" height="354"/>
@@ -267,7 +267,7 @@
         <!--Photo Detail View Controller-->
         <scene sceneID="djI-sj-2v1">
             <objects>
-                <viewController id="5Bc-Yt-9YT" customClass="PhotoDetailViewController" sceneMemberID="viewController">
+                <viewController id="5Bc-Yt-9YT" customClass="PhotoDetailViewController" customModule="Pixels" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nki-iv-Ffe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -291,7 +291,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYh-w5-N3b">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYh-w5-N3b">
                                         <rect key="frame" x="8" y="392" width="358" height="99"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="99" id="Vxv-rI-70Q"/>

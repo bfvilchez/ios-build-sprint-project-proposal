@@ -39,6 +39,17 @@ import FirebaseStorage
         }
     }
     
+    func deleteCoreData() {
+        let fetchRequest:NSFetchRequest<Picture> = NSFetchRequest(entityName: "Picture")
+        let deleteBatch = NSBatchDeleteRequest(fetchRequest: fetchRequest as! NSFetchRequest<NSFetchRequestResult>)
+        
+        do {
+            try CoreDataStack.shared.mainContext.execute(deleteBatch)
+        } catch {
+            NSLog("failed to delete objects")
+        }
+    }
+    
     private func savePictureToServer(_ picture: Picture,completion: @escaping(NSError?) -> Void = {_ in } ) {
         guard let uuid = Auth.auth().currentUser?.uid else { return }
         guard let pixelsURL = baseURL?.appendingPathComponent(uuid).appendingPathComponent("images").appendingPathComponent(UUID().uuidString).appendingPathExtension("json") else { return }

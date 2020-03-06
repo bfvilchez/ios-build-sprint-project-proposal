@@ -6,23 +6,27 @@
 
 ## Requirements
 
-1. Team Members: `<Who's working on this app?>`
-2. App Name: `<What's the app name?>`
+1. Team Members:  ~ ` brian vilchez `
+2. App Name: `pixels`
 3. App Description (3-5 sentences):
 
-    `<Explain your app to your Grandma (or a 5-year old child)>`
-    
+bringing poloriod photos to ios.
+
 4. Your #1 Customer (Who would use your app? Why now?)
  
-    `<Be specific and focus on a real person>`
-    
-5. Github code repository: `<Create a Github Project>`
-6. Github Project/Trello Board: `<Post your link to your Kanban board>`
+ photographers that would like to have a poloriod type template..
+
+5. Github code repository: ` n/a `
+6. Github Project/Trello Board: `n/a`
 7. Create a Slack DM Group with your partner, TL, and Instructor and say "hi!"
 
 ## Part 1: Brainstorming
 
 Add photos, notes, and sketches from your brain storming session. 
+
+/Users/brianvilchez/Downloads/Screen Shot 2020-03-06 at 3.19.41 PM.png
+/Users/brianvilchez/Downloads/Screen Shot 2020-03-06 at 3.19.30 PM.png
+/Users/brianvilchez/Downloads/Screen Shot 2020-03-06 at 3.19.17 PM.png
 
 1. Brainstorming (Photo / Sketch)
     1. Mind Map (15 minutes)
