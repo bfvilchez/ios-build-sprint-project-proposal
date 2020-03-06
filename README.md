@@ -23,11 +23,6 @@ bringing poloriod photos to ios.
 ## Part 1: Brainstorming
 
 Add photos, notes, and sketches from your brain storming session. 
-
-/Users/brianvilchez/Downloads/Screen Shot 2020-03-06 at 3.19.41 PM.png
-/Users/brianvilchez/Downloads/Screen Shot 2020-03-06 at 3.19.30 PM.png
-/Users/brianvilchez/Downloads/Screen Shot 2020-03-06 at 3.19.17 PM.png
-
 1. Brainstorming (Photo / Sketch)
     1. Mind Map (15 minutes)
         1. Set a timer for 15 minutes
