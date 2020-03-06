@@ -13,7 +13,7 @@ import Firebase
 import FirebaseAuth
 import FirebaseStorage
 
-class PixelController {
+@objc class PixelController: NSObject {
     static var token:String?
     private(set) var pictures = [Picture]()
     private let baseURL = URL(string: "https://santa-i-wish.firebaseio.com")

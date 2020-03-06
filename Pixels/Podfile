@@ -12,4 +12,9 @@ pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'Firebase/Storage'
 
+  target 'PixelsTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
 end

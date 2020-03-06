@@ -208,6 +208,7 @@
                                         <connections>
                                             <outlet property="imageNameLabel" destination="0LG-9E-a7x" id="yRQ-5O-Hbn"/>
                                             <outlet property="polaroidImage" destination="pwA-3X-DKf" id="9Bz-ZR-iEW"/>
+                                            <segue destination="5Bc-Yt-9YT" kind="show" identifier="PhotoDetailSegue" id="WwF-4o-n1E"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -262,6 +263,103 @@
                 <exit id="fEl-bi-S4S" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="840.40178571428567"/>
+        </scene>
+        <!--Photo Detail View Controller-->
+        <scene sceneID="djI-sj-2v1">
+            <objects>
+                <viewController id="5Bc-Yt-9YT" customClass="PhotoDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nki-iv-Ffe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQi-5N-4Bz">
+                                <rect key="frame" x="20" y="91" width="374" height="505"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="ifc-qg-zz5">
+                                        <rect key="frame" x="0.0" y="19" width="350" height="252"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="252" id="eJb-Fu-X6t"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sL-u1-qbg">
+                                        <rect key="frame" x="8" y="307" width="358" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="0R3-zE-R2V"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYh-w5-N3b">
+                                        <rect key="frame" x="8" y="392" width="358" height="99"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="99" id="Vxv-rI-70Q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ifc-qg-zz5" firstAttribute="leading" secondItem="eQi-5N-4Bz" secondAttribute="leading" id="6Yv-ko-UbX"/>
+                                    <constraint firstItem="ifc-qg-zz5" firstAttribute="top" secondItem="eQi-5N-4Bz" secondAttribute="top" constant="19" id="C1p-Xx-YEO"/>
+                                    <constraint firstAttribute="height" constant="505" id="PlN-Sn-k4b"/>
+                                    <constraint firstAttribute="trailing" secondItem="mYh-w5-N3b" secondAttribute="trailing" constant="8" id="bk0-nc-bcX"/>
+                                    <constraint firstAttribute="trailing" secondItem="8sL-u1-qbg" secondAttribute="trailing" constant="8" id="fp7-4C-WaR"/>
+                                    <constraint firstItem="mYh-w5-N3b" firstAttribute="leading" secondItem="eQi-5N-4Bz" secondAttribute="leading" constant="8" id="fz0-kK-Fv2"/>
+                                    <constraint firstItem="8sL-u1-qbg" firstAttribute="top" secondItem="ifc-qg-zz5" secondAttribute="bottom" constant="36" id="k1n-wu-STc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="505" id="kwI-fF-h6O"/>
+                                    <constraint firstAttribute="bottom" secondItem="mYh-w5-N3b" secondAttribute="bottom" constant="14" id="lkf-iO-Nm0"/>
+                                    <constraint firstItem="8sL-u1-qbg" firstAttribute="leading" secondItem="eQi-5N-4Bz" secondAttribute="leading" constant="8" id="n8t-UU-a9M"/>
+                                    <constraint firstAttribute="trailing" secondItem="ifc-qg-zz5" secondAttribute="trailing" constant="24" id="pKb-Vb-h4i"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ni-kD-usw" customClass="CustomButtons" customModule="Pixels" customModuleProvider="target">
+                                <rect key="frame" x="156" y="696" width="103" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.43529411759999997" blue="0.43529411759999997" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2NC-pU-GeG"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="rVU-Dq-5SZ"/>
+                                </constraints>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dismissButton:" destination="5Bc-Yt-9YT" eventType="touchUpInside" id="kxH-gN-8Rl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7Ut-GB-A9F" firstAttribute="trailing" secondItem="eQi-5N-4Bz" secondAttribute="trailing" constant="20" id="Fcp-DL-APW"/>
+                            <constraint firstItem="7Ut-GB-A9F" firstAttribute="bottom" secondItem="9ni-kD-usw" secondAttribute="bottom" constant="52" id="QMt-fZ-9vd"/>
+                            <constraint firstItem="eQi-5N-4Bz" firstAttribute="top" secondItem="7Ut-GB-A9F" secondAttribute="top" constant="91" id="TLF-2R-k0s"/>
+                            <constraint firstItem="9ni-kD-usw" firstAttribute="leading" secondItem="7Ut-GB-A9F" secondAttribute="leading" constant="156" id="gTN-XX-Qz3"/>
+                            <constraint firstItem="eQi-5N-4Bz" firstAttribute="leading" secondItem="7Ut-GB-A9F" secondAttribute="leading" constant="20" id="gdK-5u-QVw"/>
+                            <constraint firstItem="7Ut-GB-A9F" firstAttribute="trailing" secondItem="9ni-kD-usw" secondAttribute="trailing" constant="155" id="iQJ-fE-TPY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Ut-GB-A9F"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EnY-xP-LWC"/>
+                    <connections>
+                        <outlet property="lnameLabel" destination="8sL-u1-qbg" id="X0c-6z-01a"/>
+                        <outlet property="photoDetail" destination="mYh-w5-N3b" id="Hpc-ps-urD"/>
+                        <outlet property="photoView" destination="ifc-qg-zz5" id="EdU-E3-je4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V9G-e5-0y7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="1560.9375"/>
         </scene>
         <!--Add Memory View Controller-->
         <scene sceneID="WYO-Dg-RxH">

@@ -55,7 +55,6 @@ class MemoriesViewController: UIViewController, NSFetchedResultsControllerDelega
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         collectionView.reloadData()
-         print(fetchResultsController.fetchedObjects?.count)
     }
     
     //MARK: - actions
@@ -67,6 +66,14 @@ class MemoriesViewController: UIViewController, NSFetchedResultsControllerDelega
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "PhotoDetailSegue" {
+            guard let cell = sender as? PictureCollectionViewCell, let indexPath = collectionView.indexPath(for: cell),
+                let photoDetailVc = segue.destination as? PhotoDetailViewController else { return }
+            photoDetailVc.picture = fetchResultsController.object(at: indexPath)
+            
+        }
+    }
 }
 
 extension MemoriesViewController: UICollectionViewDataSource,UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
