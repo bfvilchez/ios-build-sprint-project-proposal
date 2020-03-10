@@ -15,3 +15,7 @@ struct PictureRepresentation: Codable {
     
     
 }
+
+struct LOL {
+    
+}
